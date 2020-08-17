@@ -1,0 +1,50 @@
+﻿  Player.cpp
+D:\sosujungong\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Object.h(65,21): warning C4244: '=': 'SCX'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              SCX=int
+          ]
+D:\sosujungong\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Player.cpp(19): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setScalingCenter<int,int>(SCX,SCY)'에 대한 참조를 확인하세요.
+          with
+          [
+              SCX=int,
+              SCY=int
+          ]
+D:\sosujungong\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Object.h(66,21): warning C4244: '=': 'SCY'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              SCY=int
+          ]
+D:\sosujungong\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Object.h(59,13): warning C4244: '=': 'SX'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              SX=double
+          ]
+D:\sosujungong\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Player.cpp(20): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setScale<double,double>(SX,SY)'에 대한 참조를 확인하세요.
+          with
+          [
+              SX=double,
+              SY=double
+          ]
+D:\sosujungong\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Object.h(60,13): warning C4244: '=': 'SY'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              SY=double
+          ]
+D:\sosujungong\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Object.h(53,11): warning C4244: '=': 'PX'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              PX=int
+          ]
+D:\sosujungong\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Player.cpp(22): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setPos<int,int>(PX,PY)'에 대한 참조를 확인하세요.
+          with
+          [
+              PX=int,
+              PY=int
+          ]
+D:\sosujungong\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Object.h(54,11): warning C4244: '=': 'PY'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              PY=int
+          ]
+  Engine.vcxproj -> D:\sosujungong\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Debug\Engine.exe

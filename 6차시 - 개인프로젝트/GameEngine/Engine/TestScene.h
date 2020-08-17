@@ -4,16 +4,15 @@
 #include "Animation.h"
 #include "MainScene.h"
 #include "Player.h"
+#include "Portal.h"
 #include <list>
 
 class TestScene :
     public Scene
 {
 private:
-	float gravity;
-	bool isJump;
-
 	Player* player;
+	Portal* portal;
 public:
 	TestScene();
 	~TestScene();

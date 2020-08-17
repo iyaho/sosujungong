@@ -1,33 +1,12 @@
-﻿  stdafx.cpp
-  Animation.cpp
-  Application.cpp
-  Console.cpp
-  InputManager.cpp
-C:\Users\이야호-PC\Desktop\엔진\sosujungong\6차시 - 개인프로젝트\GameEngine\Engine\InputManager.cpp(43,27): warning C4244: '인수': 'LONG'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\이야호-PC\Desktop\엔진\sosujungong\6차시 - 개인프로젝트\GameEngine\Engine\InputManager.cpp(43,22): warning C4244: '인수': 'LONG'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  main.cpp
+﻿  main.cpp
   MainScene.cpp
-  Object.cpp
-C:\Users\이야호-PC\Desktop\엔진\sosujungong\6차시 - 개인프로젝트\GameEngine\Engine\Object.cpp(59,18): warning C4244: '+=': 'FLOAT'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\이야호-PC\Desktop\엔진\sosujungong\6차시 - 개인프로젝트\GameEngine\Engine\Object.cpp(60,19): warning C4244: '+=': 'FLOAT'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\이야호-PC\Desktop\엔진\sosujungong\6차시 - 개인프로젝트\GameEngine\Engine\Object.cpp(61,17): warning C4244: '+=': 'FLOAT'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\이야호-PC\Desktop\엔진\sosujungong\6차시 - 개인프로젝트\GameEngine\Engine\Object.cpp(62,20): warning C4244: '+=': 'FLOAT'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\이야호-PC\Desktop\엔진\sosujungong\6차시 - 개인프로젝트\GameEngine\Engine\Object.cpp(92,12): warning C4244: 'return': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\이야호-PC\Desktop\엔진\sosujungong\6차시 - 개인프로젝트\GameEngine\Engine\Object.cpp(96,12): warning C4244: 'return': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\이야호-PC\Desktop\엔진\sosujungong\6차시 - 개인프로젝트\GameEngine\Engine\Object.cpp(104,10): warning C4244: '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\이야호-PC\Desktop\엔진\sosujungong\6차시 - 개인프로젝트\GameEngine\Engine\Object.cpp(105,10): warning C4244: '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   Player.cpp
-C:\Users\이야호-PC\Desktop\엔진\sosujungong\6차시 - 개인프로젝트\GameEngine\Engine\Player.cpp(41,30): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\이야호-PC\Desktop\엔진\sosujungong\6차시 - 개인프로젝트\GameEngine\Engine\Player.cpp(44,31): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\이야호-PC\Desktop\엔진\sosujungong\6차시 - 개인프로젝트\GameEngine\Engine\Player.cpp(48,20): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\이야호-PC\Desktop\엔진\sosujungong\6차시 - 개인프로젝트\GameEngine\Engine\Player.cpp(62,20): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  Scene.cpp
-  SceneManager.cpp
-  SoundManager.cpp
-  Sprite.cpp
-C:\Users\이야호-PC\Desktop\엔진\sosujungong\6차시 - 개인프로젝트\GameEngine\Engine\Sprite.cpp(40,48): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\이야호-PC\Desktop\엔진\sosujungong\6차시 - 개인프로젝트\GameEngine\Engine\Sprite.cpp(40,35): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\sosujungong\sosujungong\6차시 - 개인프로젝트\GameEngine\Engine\Player.cpp(39,30): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\sosujungong\sosujungong\6차시 - 개인프로젝트\GameEngine\Engine\Player.cpp(42,31): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\sosujungong\sosujungong\6차시 - 개인프로젝트\GameEngine\Engine\Player.cpp(46,20): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\sosujungong\sosujungong\6차시 - 개인프로젝트\GameEngine\Engine\Player.cpp(60,20): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Portal.cpp
   TestScene.cpp
   TextureManager.cpp
   코드를 생성하고 있습니다...
-  Engine.vcxproj -> C:\Users\이야호-PC\Desktop\엔진\sosujungong\6차시 - 개인프로젝트\GameEngine\Debug\Engine.exe
+  Engine.vcxproj -> D:\sosujungong\sosujungong\6차시 - 개인프로젝트\GameEngine\Debug\Engine.exe

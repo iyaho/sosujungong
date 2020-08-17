@@ -12,8 +12,6 @@ Player::Player()
 	playerAnimation->AddFrame("Resources/Player2.png");
 	playerAnimation->AddFrame("Resources/Player3.png");
 
-	playerAnimation->setScale();
-
 	AddChild(playerAnimation);
 
 	rect = playerAnimation->getRect();

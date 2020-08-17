@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\Engine">
+      <UniqueIdentifier>{47d966b3-6e03-4618-baf9-f41b13942b26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Object">
+      <UniqueIdentifier>{c06dd98a-48c8-4a68-92d5-cc5aa7bf4e7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Manager">
+      <UniqueIdentifier>{a1461c7a-2a6f-402b-8aaf-d739c2153a5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Core">
+      <UniqueIdentifier>{bf097715-59db-44cc-a040-c0af4dc4aa0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine">
+      <UniqueIdentifier>{38d65b91-d05a-4802-9ff7-f61569bb74a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Object">
+      <UniqueIdentifier>{8ace75dd-5821-4a52-ac39-53b16238d66f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Manager">
+      <UniqueIdentifier>{4e6d81f7-e216-4732-af5c-59fa48f76803}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Core">
+      <UniqueIdentifier>{6b85e086-681a-4c51-899e-679c14a2116e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Game">
+      <UniqueIdentifier>{525b02c7-cd91-4e36-ae8f-683ad6f48766}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Game">
+      <UniqueIdentifier>{bbf14af3-1789-4999-bd26-71e65c381f9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\player">
+      <UniqueIdentifier>{3081057f-635f-4f00-a225-25a944bbc9ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\portal">
+      <UniqueIdentifier>{d5a3a059-df54-45eb-8ba5-41d8797ef18f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Game\Object">
+      <UniqueIdentifier>{c7529d14-4ccd-4511-8d96-8fd040f89263}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Game\Scene">
+      <UniqueIdentifier>{2f6f469c-39a0-4650-aeec-387e519d4dc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Game\Scene">
+      <UniqueIdentifier>{5afc9efc-9570-4210-9b47-214cd34b3464}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Game\Object">
+      <UniqueIdentifier>{1afa365b-51d8-47d2-beda-81f5d3051211}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\dddd">
+      <UniqueIdentifier>{fd79df37-7055-4804-80db-0ddc9cb90124}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\turret">
+      <UniqueIdentifier>{d34f7d97-25a3-4669-b2a5-11c958b7a877}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Application.cpp">
+      <Filter>소스 파일\Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>소스 파일\Engine\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>소스 파일\Engine\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>소스 파일\Engine\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>소스 파일\Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Console.cpp">
+      <Filter>소스 파일\Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>소스 파일\Engine\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>소스 파일\Engine\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>소스 파일\Engine\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>소스 파일\Game\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScene.cpp">
+      <Filter>소스 파일\Game\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="MainScene.cpp">
+      <Filter>소스 파일\Game\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundManager.cpp">
+      <Filter>소스 파일\Engine\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Portal.cpp">
+      <Filter>소스 파일\Game\Object</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Application.h">
+      <Filter>헤더 파일\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>헤더 파일\Engine\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>헤더 파일\Engine\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>헤더 파일\Engine\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>헤더 파일\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Console.h">
+      <Filter>헤더 파일\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundManager.h">
+      <Filter>헤더 파일\Engine\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManager.h">
+      <Filter>헤더 파일\Engine\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>헤더 파일\Engine\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>헤더 파일\Engine\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>헤더 파일\Game\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="MainScene.h">
+      <Filter>헤더 파일\Game\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="TestScene.h">
+      <Filter>헤더 파일\Game\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Portal.h">
+      <Filter>헤더 파일\Game\Object</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\PlayerMove-1.png">
+      <Filter>리소스 파일\player</Filter>
+    </Image>
+    <Image Include="Resources\PlayerMove-2.png">
+      <Filter>리소스 파일\player</Filter>
+    </Image>
+    <Image Include="Resources\portalB1.png">
+      <Filter>리소스 파일\portal</Filter>
+    </Image>
+    <Image Include="Resources\portalB2.png">
+      <Filter>리소스 파일\portal</Filter>
+    </Image>
+    <Image Include="Resources\portalB3.png">
+      <Filter>리소스 파일\portal</Filter>
+    </Image>
+    <Image Include="Resources\portalB4.png">
+      <Filter>리소스 파일\portal</Filter>
+    </Image>
+    <Image Include="Resources\portalB5.png">
+      <Filter>리소스 파일\portal</Filter>
+    </Image>
+    <Image Include="Resources\portalB6.png">
+      <Filter>리소스 파일\portal</Filter>
+    </Image>
+    <Image Include="Resources\portalB7.png">
+      <Filter>리소스 파일\portal</Filter>
+    </Image>
+    <Image Include="Resources\portalB8.png">
+      <Filter>리소스 파일\portal</Filter>
+    </Image>
+    <Image Include="Resources\portalB9.png">
+      <Filter>리소스 파일\portal</Filter>
+    </Image>
+    <Image Include="Resources\portalO1.png">
+      <Filter>리소스 파일\portal</Filter>
+    </Image>
+    <Image Include="Resources\portalO2.png">
+      <Filter>리소스 파일\portal</Filter>
+    </Image>
+    <Image Include="Resources\portalO3.png">
+      <Filter>리소스 파일\portal</Filter>
+    </Image>
+    <Image Include="Resources\portalO4.png">
+      <Filter>리소스 파일\portal</Filter>
+    </Image>
+    <Image Include="Resources\portalO5.png">
+      <Filter>리소스 파일\portal</Filter>
+    </Image>
+    <Image Include="Resources\portalO6.png">
+      <Filter>리소스 파일\portal</Filter>
+    </Image>
+    <Image Include="Resources\portalO7.png">
+      <Filter>리소스 파일\portal</Filter>
+    </Image>
+    <Image Include="Resources\portalO8.png">
+      <Filter>리소스 파일\portal</Filter>
+    </Image>
+    <Image Include="Resources\portalO9.png">
+      <Filter>리소스 파일\portal</Filter>
+    </Image>
+    <Image Include="Resources\Image\avoid.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Image\AvoidBuilding.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Image\Background.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Image\Block.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Image\BlockBuilding.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Image\build.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Image\building.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Image\clearback.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Image\coin-red.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Image\coin-yellow.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Image\Drop.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Image\DropBuilding.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Image\exit.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Image\harphoon.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Image\how.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Image\how-out.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Image\howscene.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Image\in.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Image\LoopMap.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Image\main.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Image\mainname.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Image\name.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Image\number-0.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Image\number-1.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Image\number-2.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Image\number-3.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Image\number-4.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Image\number-5.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Image\number-6.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Image\number-7.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Image\number-8.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Image\number-9.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Image\out.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Image\player-run.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Image\player-stop.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Image\shoot-harphoon.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Image\start.png">
+      <Filter>리소스 파일\dddd</Filter>
+    </Image>
+    <Image Include="Resources\Player1.png">
+      <Filter>리소스 파일\player</Filter>
+    </Image>
+    <Image Include="Resources\turret1.png">
+      <Filter>리소스 파일\turret</Filter>
+    </Image>
+    <Image Include="Resources\turret2.png">
+      <Filter>리소스 파일\turret</Filter>
+    </Image>
+    <Image Include="Resources\turret3.png">
+      <Filter>리소스 파일\turret</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
