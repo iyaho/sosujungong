@@ -56,7 +56,7 @@ void Player::Update(float dTime)
 
 	GetAngle();
 
-	potalGun->setRotation(angle/180/M_PI);
+	potalGun->setRotation(angle);
 
 	
 
@@ -128,9 +128,6 @@ void Player::PlayerUpdate(float dTime)
 
 void Player::GetAngle()
 {
-	float Width = fabs(potalGun->getPosX()-inputManager->GetMousePos().x);
-	float Height = fabs(potalGun->getPosY() - inputManager->GetMousePos().y);
-
-	angle = atan2(Height, Width);
+	angle = (inputManager->GetMousePos().y - getPosY()) / (inputManager->GetMousePos().x - getPosX());
 	conprint(angle);
 }

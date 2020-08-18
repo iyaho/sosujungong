@@ -1,5 +1,4 @@
 ﻿  Player.cpp
-C:\Users\이야호-PC\Desktop\엔진\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Player.cpp(59,33): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 C:\Users\이야호-PC\Desktop\엔진\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Object.h(65,21): warning C4244: '=': 'SCX'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
           with
           [
