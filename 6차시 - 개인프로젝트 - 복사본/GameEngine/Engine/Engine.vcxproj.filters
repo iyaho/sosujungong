@@ -166,12 +166,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="Resources\PlayerMove-1.png">
-      <Filter>리소스 파일\player</Filter>
-    </Image>
-    <Image Include="Resources\PlayerMove-2.png">
-      <Filter>리소스 파일\player</Filter>
-    </Image>
     <Image Include="Resources\portalB1.png">
       <Filter>리소스 파일\portal</Filter>
     </Image>
@@ -348,6 +342,12 @@
     </Image>
     <Image Include="Resources\turret3.png">
       <Filter>리소스 파일\turret</Filter>
+    </Image>
+    <Image Include="Resources\Player2.png">
+      <Filter>리소스 파일\player</Filter>
+    </Image>
+    <Image Include="Resources\Player3.png">
+      <Filter>리소스 파일\player</Filter>
     </Image>
   </ItemGroup>
 </Project>

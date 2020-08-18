@@ -15,12 +15,21 @@ Player::Player()
 
 	AddChild(playerAnimation);
 
+	potalGun = new Sprite("Resources/potalgun.png");
+
+	AddChild(potalGun);
+
 	rect = playerAnimation->getRect();
 
-	setScalingCenter(playerAnimation->getWidth() / 4, playerAnimation->getWidth() / 2);
-	playerAnimation->setScale(0.5, 0.5);
+	setScalingCenter(playerAnimation->getWidth() / 2, playerAnimation->getWidth() / 2);
+	playerAnimation->setScale(1, 1);
+	setScalingCenter(potalGun->getWidth() / 2, potalGun->getWidth() / 2);
+	potalGun->setScale(1.5, 1.5);
 
 	setPos(20, 100);
+	
+
+	setRotationCenter(potalGun->getWidth() / 2, potalGun->getWidth() / 2);
 }
 
 Player::~Player()
@@ -32,6 +41,7 @@ void Player::Render()
 {
 	Object::Render();
 	playerAnimation->Render();
+	potalGun->Render();
 }
 
 void Player::Update(float dTime)
@@ -44,11 +54,15 @@ void Player::Update(float dTime)
 
 	PlayerUpdate(dTime);
 
+	GetAngle();
 
+	potalGun->setRotation(angle/180/M_PI);
 
+	
 
 
 	playerAnimation->Update(dTime);
+	potalGun->Update(dTime);
 }
 
 void Player::PlayerUpdate(float dTime)
@@ -81,12 +95,15 @@ void Player::PlayerUpdate(float dTime)
 	if (inputManager->GetKeyState('D') == KEY_UP || inputManager->GetKeyState(VK_RIGHT) == KEY_UP) {
 		right = false;
 	}
-
-	if (inputManager->GetMousePos().x > rect.left) {
-		playerAnimation->setScale(0.5, 0.5);
+	if (inputManager->GetMousePos().x > this->getPosX()) {
+		playerAnimation->setScale(1, 1);
+		potalGun->setPos(playerAnimation->getPosX() + 15, playerAnimation->getPosY() + 22);
+		potalGun->setScale(1.5, 1.5);
 	}
-	if (inputManager->GetMousePos().x < rect.right) {
-		playerAnimation->setScale(-0.5, 0.5);
+	if (inputManager->GetMousePos().x < this->getPosX()) {
+		playerAnimation->setScale(-1, 1);
+		potalGun->setPos(playerAnimation->getPosX() - 15, playerAnimation->getPosY() + 22);
+		potalGun->setScale(-1.5, 1.5);
 	}
 
 	if (getPosY() > 400) {
@@ -107,4 +124,13 @@ void Player::PlayerUpdate(float dTime)
 	else if (inputManager->GetKeyState(VK_RBUTTON) == KEY_DOWN) {
 
 	}
+}
+
+void Player::GetAngle()
+{
+	float Width = fabs(potalGun->getPosX()-inputManager->GetMousePos().x);
+	float Height = fabs(potalGun->getPosY() - inputManager->GetMousePos().y);
+
+	angle = atan2(Height, Width);
+	conprint(angle);
 }
