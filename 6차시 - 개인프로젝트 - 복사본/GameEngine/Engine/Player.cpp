@@ -3,11 +3,13 @@
 
 Player::Player()
 {
-	isJump = false;
+	isJump = true;
 	right = false;
 	left = false;
 	gravity = 9.8f;
 	angle = 0.0f;
+	bt = false;
+	ot = false;
 
 	playerAnimation = new Animation(10);
 	playerAnimation->AddFrame("Resources/Player2.png");
@@ -21,7 +23,7 @@ Player::Player()
 
 	rect = playerAnimation->getRect();
 
-	setScalingCenter(playerAnimation->getWidth() / 2, playerAnimation->getWidth() / 2);
+	setScalingCenter(21, 40);
 	playerAnimation->setScale(1, 1);
 	setScalingCenter(potalGun->getWidth() / 2, potalGun->getWidth() / 2);
 	potalGun->setScale(1.5, 1.5);
@@ -46,17 +48,22 @@ void Player::Render()
 
 void Player::Update(float dTime)
 {
-	gravity += 9.8f;
-
-	gravity += 9.8f;
+	if (isJump)
+	{
+		gravity += 9.8f;
+		gravity += 9.8f;
+	}
+	else
+	{
+		gravity = 0;
+	}
 
 	setPos(getPosX(), getPosY() + gravity * dTime);
 
 	PlayerUpdate(dTime);
 
-	GetAngle();
-
 	potalGun->setRotation(angle);
+
 
 	
 
@@ -95,6 +102,8 @@ void Player::PlayerUpdate(float dTime)
 	if (inputManager->GetKeyState('D') == KEY_UP || inputManager->GetKeyState(VK_RIGHT) == KEY_UP) {
 		right = false;
 	}
+
+	GetAngle();
 	if (inputManager->GetMousePos().x > this->getPosX()) {
 		playerAnimation->setScale(1, 1);
 		potalGun->setPos(playerAnimation->getPosX() + 15, playerAnimation->getPosY() + 22);
@@ -104,6 +113,7 @@ void Player::PlayerUpdate(float dTime)
 		playerAnimation->setScale(-1, 1);
 		potalGun->setPos(playerAnimation->getPosX() - 15, playerAnimation->getPosY() + 22);
 		potalGun->setScale(-1.5, 1.5);
+		angle += M_PI;
 	}
 
 	if (getPosY() > 400) {
@@ -112,22 +122,31 @@ void Player::PlayerUpdate(float dTime)
 	}
 
 	if (inputManager->GetKeyState('W') == KEY_DOWN || inputManager->GetKeyState(VK_UP) == KEY_DOWN) {
-		if (getPosY() == 400) {
+		if (getPosY() >= 400) {
 			isJump = true;
 			gravity = 0;
 		}
 	}
+	if (bt == true || ot == true) {
+		bt = false;
+		ot = false;
+	}
 
 	if (inputManager->GetKeyState(VK_LBUTTON) == KEY_DOWN) {
-
+		bt = true;
 	}
 	else if (inputManager->GetKeyState(VK_RBUTTON) == KEY_DOWN) {
-
+		ot = false;
 	}
 }
 
 void Player::GetAngle()
 {
-	angle = (inputManager->GetMousePos().y - getPosY()) / (inputManager->GetMousePos().x - getPosX());
+	angle = atan2f( ( inputManager->GetMousePos().y - getPosY() ), ( inputManager->GetMousePos().x - getPosX() ) );
+
+	conprint(inputManager->GetMousePos().y);
+	conprint(inputManager->GetMousePos().x);
+	conprint(getPosY());
+	conprint(getPosX());
 	conprint(angle);
 }

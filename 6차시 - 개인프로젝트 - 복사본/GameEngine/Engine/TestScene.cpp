@@ -31,23 +31,23 @@ void TestScene::Update(float dTime)
 	portalA->Update(dTime);
 	portalB->Update(dTime);
 
-	if (player->getPosX() > portalB->getPosX() - 5 && player->getPosX() < portalB->getPosX() + 5) {
+	if (player->getPosX() > portalB->getPosX() - 5 && player->getPosX() < portalB->getPosX() + 5 && player->getPosY() > portalB->getPosY() - 100 && player->getPosY() < portalB->getPosY() + 100) {
 		switch (portalB->getPortalRot())
 		{
-		case 0: player->setPos(portalA->getPosX(), portalA->getPosY() + 10); break;
-		case 1: player->setPos(portalA->getPosX() + 10, portalA->getPosY()); break;
-		case 2: player->setPos(portalA->getPosX(), portalA->getPosY() - 10); break;
-		case 3: player->setPos(portalA->getPosX() - 10, portalA->getPosY()); break;
+		case 0: player->setPos(portalA->getPosX(), portalA->getPosY() + 35); break;
+		case 1: player->setPos(portalA->getPosX() + 10, portalA->getPosY() + 25); break;
+		case 2: player->setPos(portalA->getPosX(), portalA->getPosY() + 15); break;
+		case 3: player->setPos(portalA->getPosX() - 10, portalA->getPosY() + 25); break;
 		}
 	}
 
-	if (player->getPosX() > portalA->getPosX() - 5 && player->getPosX() < portalA->getPosX() + 5) {
+	if (player->getPosX() > portalA->getPosX() - 5 && player->getPosX() < portalA->getPosX() + 5 && player->getPosY() > portalA->getPosY() - 100 && player->getPosY() < portalA->getPosY() + 100) {
 		switch (portalA->getPortalRot())
 		{
-		case 0: player->setPos(portalB->getPosX(), portalB->getPosY() + 10); break;
-		case 1: player->setPos(portalB->getPosX() + 10, portalB->getPosY()); break;
-		case 2: player->setPos(portalB->getPosX(), portalB->getPosY() - 10); break;
-		case 3: player->setPos(portalB->getPosX() - 10, portalB->getPosY()); break;
+		case 0: player->setPos(portalB->getPosX(), portalB->getPosY() + 35); break;
+		case 1: player->setPos(portalB->getPosX() + 10, portalB->getPosY() + 25); break;
+		case 2: player->setPos(portalB->getPosX(), portalB->getPosY() + 15); break;
+		case 3: player->setPos(portalB->getPosX() - 10, portalB->getPosY() + 25); break;
 		}
 	}
 }

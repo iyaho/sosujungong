@@ -16,11 +16,12 @@ private:
     float gravity;
     bool isJump;
     bool left, right;
-    float angle;
 public:
     Player();
     ~Player();
 
+    bool bt, ot;
+    float angle;
     void Render();
     void Update(float dTime);
 
