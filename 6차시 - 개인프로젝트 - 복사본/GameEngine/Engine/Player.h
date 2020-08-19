@@ -15,6 +15,7 @@ private:
     Sprite* potalGun;
     float gravity;
     bool isJump;
+    bool isGravity;
     bool left, right;
 public:
     Player();

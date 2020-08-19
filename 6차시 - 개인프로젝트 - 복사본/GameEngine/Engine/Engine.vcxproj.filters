@@ -118,7 +118,7 @@
       <Filter>소스 파일\Game\Object</Filter>
     </ClCompile>
     <ClCompile Include="Wall.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Game\Object</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -168,7 +168,7 @@
       <Filter>헤더 파일\Game\Object</Filter>
     </ClInclude>
     <ClInclude Include="Wall.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Game\Object</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -354,6 +354,18 @@
     </Image>
     <Image Include="Resources\Player3.png">
       <Filter>리소스 파일\player</Filter>
+    </Image>
+    <Image Include="Resources\wallB.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="Resources\wallL.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="Resources\wallR.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="Resources\wallT.png">
+      <Filter>리소스 파일</Filter>
     </Image>
   </ItemGroup>
 </Project>

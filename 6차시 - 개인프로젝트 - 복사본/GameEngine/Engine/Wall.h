@@ -9,6 +9,9 @@ class Wall :
 	public Object
 {
 private:
+	int wallRot;
+	int wallType;
+
 	Portal* portal;
 	Player* player;
 	Sprite* wallL, *wallR, *wallB, *wallT;
@@ -19,5 +22,11 @@ public:
 
 	void Render();
 	void Update(float dTime);
+
+	int getWallRot();
+	int getWallType();
+
+	void setWallRot(int rot);
+	void setWallType(int type);
 };
 

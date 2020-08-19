@@ -10,6 +10,7 @@ private:
 	Animation* portalB;
 	int portalRot;
 	int portalType;
+	bool portalBt, portalOt;
 
 public:
 	Portal();
@@ -24,5 +25,10 @@ public:
 
 	void setPortalRot(int rot);
 	void setPortalType(int type);
+
+	int BgetX();
+	int BgetY();
+	int OgetX();
+	int OgetY();
 };
 

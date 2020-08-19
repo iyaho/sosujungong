@@ -5,11 +5,11 @@ MainScene::MainScene() {
 
 	startButton = new Sprite("Resources/Image/in.png");
 	AddObject(startButton);
-	startButton->setPos(SCREEN_WIDTH / 2, 350);
+	startButton->setPos(SCREEN_WIDTH / 4, 350);
 
 	exitButton = new Sprite("Resources/Image/out.png");
 	AddObject(exitButton);
-	exitButton->setPos(SCREEN_WIDTH / 2, 500);
+	exitButton->setPos(SCREEN_WIDTH / 4, 500);
 }
 
 MainScene::~MainScene() {

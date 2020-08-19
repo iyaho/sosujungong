@@ -3,7 +3,8 @@
 
 Player::Player()
 {
-	isJump = true;
+	isJump = false;
+	isGravity = true;
 	right = false;
 	left = false;
 	gravity = 9.8f;
@@ -23,7 +24,7 @@ Player::Player()
 
 	rect = playerAnimation->getRect();
 
-	setScalingCenter(21, 40);
+	setScalingCenter(playerAnimation->getWidth(), playerAnimation->getHeight());
 	playerAnimation->setScale(1, 1);
 	setScalingCenter(potalGun->getWidth() / 2, potalGun->getWidth() / 2);
 	potalGun->setScale(1.5, 1.5);
@@ -48,7 +49,7 @@ void Player::Render()
 
 void Player::Update(float dTime)
 {
-	if (isJump)
+	if (isGravity)
 	{
 		gravity += 9.8f;
 		gravity += 9.8f;
@@ -74,9 +75,17 @@ void Player::Update(float dTime)
 
 void Player::PlayerUpdate(float dTime)
 {
+	if (getPosY() >= 400) {
+		gravity = true;
+	}
+	else {
+		gravity = false;
+	}
 	if (isJump) {
 		setPos(getPosX(), getPosY() - 500 * dTime);
+		isGravity = true;
 	}
+	conprint(getPosX())
 
 	if (left) {
 		if (this->getPosX() > 50)
@@ -92,7 +101,8 @@ void Player::PlayerUpdate(float dTime)
 	}
 
 	if (right) {
-		setPos(getPosX() + 250 * dTime, getPosY());
+		if (this->getPosX() < 950)
+			setPos(getPosX() + 250 * dTime, getPosY());
 	}
 
 	if (inputManager->GetKeyState('D') == KEY_DOWN || inputManager->GetKeyState(VK_RIGHT) == KEY_DOWN) {
@@ -127,26 +137,11 @@ void Player::PlayerUpdate(float dTime)
 			gravity = 0;
 		}
 	}
-	if (bt == true || ot == true) {
-		bt = false;
-		ot = false;
-	}
-
-	if (inputManager->GetKeyState(VK_LBUTTON) == KEY_DOWN) {
-		bt = true;
-	}
-	else if (inputManager->GetKeyState(VK_RBUTTON) == KEY_DOWN) {
-		ot = false;
-	}
+	
+	
 }
 
 void Player::GetAngle()
 {
 	angle = atan2f( ( inputManager->GetMousePos().y - getPosY() ), ( inputManager->GetMousePos().x - getPosX() ) );
-
-	conprint(inputManager->GetMousePos().y);
-	conprint(inputManager->GetMousePos().x);
-	conprint(getPosY());
-	conprint(getPosX());
-	conprint(angle);
 }

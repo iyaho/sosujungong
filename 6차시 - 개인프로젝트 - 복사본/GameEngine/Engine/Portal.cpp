@@ -8,6 +8,9 @@ Portal::Portal()
 	// 0 O, 1 B
 	portalType = 0;
 
+	portalBt = false;
+	portalOt = false;
+
 	portalO = new Animation(20);
 	portalO->AddFrame("Resources/portalO1.png");
 	portalO->AddFrame("Resources/portalO2.png");
@@ -47,15 +50,26 @@ Portal::~Portal()
 void Portal::Render()
 {
 	Object::Render();
-	if (portalType)
+	if (portalOt) {
 		portalB->Render();
-	else
+	}
+	if(portalBt) {
 		portalO->Render();
+	}
 }
 
 void Portal::Update(float dTime)
 {
 	Object::Update(dTime);
+	if (inputManager->GetKeyState(VK_LBUTTON) && portalType == 1) {
+		portalB->setPos(inputManager->GetMousePos().x, inputManager->GetMousePos().y);
+		portalBt = true;
+	}
+	if (inputManager->GetKeyState(VK_RBUTTON) && portalType == 0) {
+		portalO->setPos(inputManager->GetMousePos().x, inputManager->GetMousePos().y);
+		portalOt = true;
+	}
+	
 }
 
 int Portal::getPortalRot()
@@ -76,4 +90,24 @@ void Portal::setPortalRot(int rot)
 void Portal::setPortalType(int type)
 {
 	portalType = type;
+}
+
+int Portal::BgetX()
+{
+	return portalB->getPosX();
+}
+
+int Portal::BgetY()
+{
+	return portalB->getPosY();
+}
+
+int Portal::OgetX()
+{
+	return portalO->getPosX();
+}
+
+int Portal::OgetY()
+{
+	return portalO->getPosY();
 }

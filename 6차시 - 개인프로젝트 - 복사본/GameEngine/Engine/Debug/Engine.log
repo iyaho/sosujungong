@@ -1,83 +1,83 @@
 ﻿  Player.cpp
-D:\새 폴더 (2)\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Player.cpp(116,16): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
-D:\새 폴더 (2)\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Object.h(65,21): warning C4244: '=': 'SCX'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Sunrin\Documents\GitHub\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Player.cpp(126,16): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\Sunrin\Documents\GitHub\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Object.h(65,21): warning C4244: '=': 'SCX'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
           with
           [
               SCX=int
           ]
-D:\새 폴더 (2)\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Player.cpp(26): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setScalingCenter<int,int>(SCX,SCY)'에 대한 참조를 확인하세요.
+C:\Users\Sunrin\Documents\GitHub\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Player.cpp(27): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setScalingCenter<int,int>(SCX,SCY)'에 대한 참조를 확인하세요.
           with
           [
               SCX=int,
               SCY=int
           ]
-D:\새 폴더 (2)\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Object.h(66,21): warning C4244: '=': 'SCY'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Sunrin\Documents\GitHub\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Object.h(66,21): warning C4244: '=': 'SCY'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
           with
           [
               SCY=int
           ]
-D:\새 폴더 (2)\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Object.h(59,13): warning C4244: '=': 'SX'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Sunrin\Documents\GitHub\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Object.h(59,13): warning C4244: '=': 'SX'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
           with
           [
               SX=int
           ]
-D:\새 폴더 (2)\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Player.cpp(27): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setScale<int,int>(SX,SY)'에 대한 참조를 확인하세요.
+C:\Users\Sunrin\Documents\GitHub\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Player.cpp(28): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setScale<int,int>(SX,SY)'에 대한 참조를 확인하세요.
           with
           [
               SX=int,
               SY=int
           ]
-D:\새 폴더 (2)\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Object.h(60,13): warning C4244: '=': 'SY'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Sunrin\Documents\GitHub\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Object.h(60,13): warning C4244: '=': 'SY'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
           with
           [
               SY=int
           ]
-D:\새 폴더 (2)\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Object.h(59,13): warning C4244: '=': 'SX'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Sunrin\Documents\GitHub\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Object.h(59,13): warning C4244: '=': 'SX'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
           with
           [
               SX=double
           ]
-D:\새 폴더 (2)\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Player.cpp(29): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setScale<double,double>(SX,SY)'에 대한 참조를 확인하세요.
+C:\Users\Sunrin\Documents\GitHub\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Player.cpp(30): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setScale<double,double>(SX,SY)'에 대한 참조를 확인하세요.
           with
           [
               SX=double,
               SY=double
           ]
-D:\새 폴더 (2)\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Object.h(60,13): warning C4244: '=': 'SY'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Sunrin\Documents\GitHub\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Object.h(60,13): warning C4244: '=': 'SY'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
           with
           [
               SY=double
           ]
-D:\새 폴더 (2)\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Object.h(53,11): warning C4244: '=': 'PX'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Sunrin\Documents\GitHub\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Object.h(53,11): warning C4244: '=': 'PX'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
           with
           [
               PX=int
           ]
-D:\새 폴더 (2)\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Player.cpp(31): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setPos<int,int>(PX,PY)'에 대한 참조를 확인하세요.
+C:\Users\Sunrin\Documents\GitHub\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Player.cpp(32): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setPos<int,int>(PX,PY)'에 대한 참조를 확인하세요.
           with
           [
               PX=int,
               PY=int
           ]
-D:\새 폴더 (2)\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Object.h(54,11): warning C4244: '=': 'PY'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Sunrin\Documents\GitHub\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Object.h(54,11): warning C4244: '=': 'PY'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
           with
           [
               PY=int
           ]
-D:\새 폴더 (2)\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Object.h(71,22): warning C4244: '=': 'RCX'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Sunrin\Documents\GitHub\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Object.h(71,22): warning C4244: '=': 'RCX'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
           with
           [
               RCX=int
           ]
-D:\새 폴더 (2)\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Player.cpp(34): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setRotationCenter<int,int>(RCX,RCY)'에 대한 참조를 확인하세요.
+C:\Users\Sunrin\Documents\GitHub\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Player.cpp(35): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setRotationCenter<int,int>(RCX,RCY)'에 대한 참조를 확인하세요.
           with
           [
               RCX=int,
               RCY=int
           ]
-D:\새 폴더 (2)\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Object.h(72,22): warning C4244: '=': 'RCY'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Sunrin\Documents\GitHub\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Engine\Object.h(72,22): warning C4244: '=': 'RCY'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
           with
           [
               RCY=int
           ]
-  Engine.vcxproj -> D:\새 폴더 (2)\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Debug\Engine.exe
+  Engine.vcxproj -> C:\Users\Sunrin\Documents\GitHub\sosujungong\6차시 - 개인프로젝트 - 복사본\GameEngine\Debug\Engine.exe

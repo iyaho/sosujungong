@@ -122,6 +122,10 @@
     <Image Include="Resources\turret1.png" />
     <Image Include="Resources\turret2.png" />
     <Image Include="Resources\turret3.png" />
+    <Image Include="Resources\wallB.png" />
+    <Image Include="Resources\wallL.png" />
+    <Image Include="Resources\wallR.png" />
+    <Image Include="Resources\wallT.png" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
