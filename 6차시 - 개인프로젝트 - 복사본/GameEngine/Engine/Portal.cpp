@@ -1,5 +1,7 @@
 #include "stdafx.h"
 #include "Portal.h"
+#include <cmath>
+#include <math.h>
 
 Portal::Portal()
 {
@@ -50,10 +52,10 @@ Portal::~Portal()
 void Portal::Render()
 {
 	Object::Render();
-	if (portalOt) {
+	if (portalOt && portalType == 0) {
 		portalB->Render();
 	}
-	if(portalBt) {
+	if(portalBt && portalType == 1) {
 		portalO->Render();
 	}
 }
@@ -61,12 +63,32 @@ void Portal::Render()
 void Portal::Update(float dTime)
 {
 	Object::Update(dTime);
-	if (inputManager->GetKeyState(VK_LBUTTON) && portalType == 1) {
-		portalB->setPos(inputManager->GetMousePos().x, inputManager->GetMousePos().y);
+	if (inputManager->GetKeyState(VK_LBUTTON) && portalType == 0) {
 		portalBt = true;
 	}
 	if (inputManager->GetKeyState(VK_RBUTTON) && portalType == 0) {
-		portalO->setPos(inputManager->GetMousePos().x, inputManager->GetMousePos().y);
+		portalOt = true;
+	}
+	if (inputManager->GetKeyState(VK_LBUTTON) && portalType == 1) {
+		portalB->setRotation(0);
+		portalBt = true;
+	}
+	if (inputManager->GetKeyState(VK_RBUTTON) && portalType == 1) {
+		portalO->setRotation(0);
+		portalOt = true;
+	}
+	if (inputManager->GetKeyState(VK_LBUTTON) && portalType == 2) {
+		portalBt = true;
+	}
+	if (inputManager->GetKeyState(VK_RBUTTON) && portalType == 2) {
+		portalOt = true;
+	}
+	if (inputManager->GetKeyState(VK_LBUTTON) && portalType == 3) {
+		portalB->setRotation(0);
+		portalBt = true;
+	}
+	if (inputManager->GetKeyState(VK_RBUTTON) && portalType == 3) {
+		portalO->setRotation(0);
 		portalOt = true;
 	}
 	

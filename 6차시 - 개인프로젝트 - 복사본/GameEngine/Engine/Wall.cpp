@@ -12,11 +12,7 @@ Wall::Wall()
 	wallT = new Sprite("Resources/wallT.png");
 	wallB = new Sprite("Resources/wallB.png");
 
-	AddChild(wallL);
-	AddChild(wallR);
-	AddChild(wallB);
-	AddChild(wallT);
-
+	
 	wallL->setPos(999, 0);
 	wallR->setPos(0, 0);
 	wallT->setPos(0, 460);

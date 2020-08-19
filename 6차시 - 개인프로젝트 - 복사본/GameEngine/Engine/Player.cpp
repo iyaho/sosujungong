@@ -75,17 +75,14 @@ void Player::Update(float dTime)
 
 void Player::PlayerUpdate(float dTime)
 {
-	if (getPosY() >= 400) {
-		gravity = true;
+	if (getPosY() > 400) {
+		isGravity = true;
 	}
-	else {
-		gravity = false;
-	}
+	conprint(gravity);
 	if (isJump) {
 		setPos(getPosX(), getPosY() - 500 * dTime);
 		isGravity = true;
 	}
-	conprint(getPosX())
 
 	if (left) {
 		if (this->getPosX() > 50)
@@ -129,6 +126,7 @@ void Player::PlayerUpdate(float dTime)
 	if (getPosY() > 400) {
 		setPos(getPosX(), 400);
 		isJump = false;
+		gravity = 0;
 	}
 
 	if (inputManager->GetKeyState('W') == KEY_DOWN || inputManager->GetKeyState(VK_UP) == KEY_DOWN) {

@@ -107,4 +107,7 @@ void TestScene::Update(float dTime)
 			portalB->setPos(inputManager->GetMousePos().x, inputManager->GetMousePos().y);
 		}
 	}
+
+	conprint(portalA->getPortalRot());
+	conprint(portalB->getPortalRot());
 }
